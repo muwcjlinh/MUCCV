@@ -1,0 +1,18 @@
+{
+  "name": "muccv",
+  "version": "1.0.0",
+  "description": "Build a Website with node, express, socket",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app --ignore feedback.json"
+  },
+  "author": "Ryan Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "reload": "^2.2.2",
+    "socket.io": "^2.0.4"
+  }
+}

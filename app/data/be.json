@@ -1,0 +1,21 @@
+{
+  "be": [{
+    "title" : "Nodejs",
+    "summary" : "Node.js is a powerful tool for controlling servers, building web applications, and creating event-driven programs. And it takes JavaScript—a language familiar to all web developers—out of the browser. With Node.js, you can build applications that run on your laptop or even the cloud.",
+    "description": "<p>***</p>",
+    "photo": ["nodejs.png"],
+    "photoD": ["nodejs_d.jpg"]
+  },{
+    "title" : "Expressjs",
+    "summary": "Express is a fast, minimalist framework that sits on top of Node.js and allows you to build powerful single- and multi-page web applications and websites.",
+    "description": "<p>***</p>",
+    "photo" : ["expressjs.png"],
+    "photoD": ["expressjs_d.png"]
+  },{
+    "title" : "Socketio",
+    "summary": "Socket.IO—a web library that enables real-time bidirectional event-based communication.",
+    "description": "<p>***</p>",
+    "photo" : ["socket.jpg"],
+    "photoD": ["socketio_d.jpg"]
+  }]
+}

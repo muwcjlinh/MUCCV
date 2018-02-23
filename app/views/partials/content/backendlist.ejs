@@ -1,0 +1,34 @@
+<article class="backendlist <% if (pageID == 'home') { %> jumbotron hidden-xs <% } %>">
+  <div class="container">
+    <div class="row">
+        <% backend.forEach(function(item) { %>
+          <div class="<% if (pageID == 'home') { %> col-sm-4 text-center <% } else { %> col-sm-8 <% } %>">
+          <h3 class="backendlist-title"><%= item.title %></h3>
+          <p class="backendlist-info">
+            <a href="/backend/<%= item.title %>">
+              <% if (pageID == 'backendList') { %>
+                <img class="backendlist-img img-circle pull-left" src="/images/be/<%= item.photo %>" alt="Photo of <%= item.title %>"></a>
+              <% } %>
+
+              <% if (pageID == 'home') { %>
+                <img class="backendlist-img img-circle " src="/images/be/<%= item.photo %>" alt="Photo of <%= item.title %>"></a>
+              <% } %>
+
+              <% if (pageID == 'backendDetail') { %>
+                <img class="backendlist-img img-responsive pull-left" src="/images/be/<%= item.photoD %>" alt="Photo of <%= item.title %>"></a>
+              <% } %>
+            </a>
+            <% if (pageID !== 'home') { %>
+              <% if (pageID == 'backendList') { %>
+                <%= item.summary %>
+              <% } else { %>
+                 <%= item.summary %>
+                 <%- item.description %>
+              <% } %>
+            <% } %>
+          </p>
+        </div>
+        <% }); %>
+    </div><!-- row -->
+  </div><!-- container -->
+</article>

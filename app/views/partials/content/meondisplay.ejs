@@ -1,0 +1,11 @@
+<article class ="sidebar">
+  <h1 class="sidebar-title"> Me on display</h1>
+  <p class="sidebar-body">Here are "Me"!!! A little bit of my life</p>
+  <div class="pixgrid clearfix">
+    <% if (artwork.length > 0) { %>
+    <%   for (i = 0; i < artwork.length; i++) { %>
+          <img src="/images/artwork/<%= artwork[i] %>" alt="Me <%= i %>">
+    <%   } %>
+    <% } %>
+  </div>
+</article>
